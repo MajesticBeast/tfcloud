@@ -15,7 +15,7 @@ module "tags" {
 }
 
 module "s3" {
-  source = "../"
+  source = "./s3"
 
   bucket = var.bucket + random_pet.bucket_suffix.id
 
