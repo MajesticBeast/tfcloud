@@ -20,3 +20,11 @@ module "s3" {
 
   tags = module.tags.tags
 }
+
+module "iam" {
+  source = "app.terraform.io/thelostsons/iam/aws"
+  version = "0.0.1"
+
+  name = "timmay"
+  tags = module.tags.tags
+}
